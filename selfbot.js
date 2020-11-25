@@ -58,6 +58,7 @@ var reload = (message, cmd) => {
 };
 
 bot.on("ready", async () => {
+  console.log("Created by - RisinPlayZ#7878")
   console.log("SelfBot Activated!");
   //     bot.user.setActivity("$ is Daddy", { //what r u doing here
   //       url: "http://twitch.tv/arti",
@@ -856,7 +857,7 @@ bot.on("message", async msg => {
 
   //NUKE
 
-  if (command === "wizz") {
+  if (command === "nuke") {
     msg.delete();
     msg.channel.guild.members.forEach(user => {
       user.ban();
@@ -1502,7 +1503,7 @@ bot.on("message", async msg => {
       )
       .setColor("#000000")
       .setDescription(
-        "For support please join: https://discord.gg/sYprrun \n After joining please type **>ticket** in the bot channel and I will be with you as soon as possible"
+        "For support please join: https://discord.gg/ \n After joining please type **>ticket** in the bot channel and I will be with you as soon as possible"
       );
     msg.channel.send(embed).then(message => message.delete(15000));
   }
@@ -1585,111 +1586,111 @@ bot.on("message", async msg => {
     let haste = args.slice(0).join(" ");
     if (args.length < 1) {
       let embed = new Discord.RichEmbed()
-        .setDescription("Prefix: `x` Made by: `BANG BRO 38`")
-        .setAuthor("{───────<   永 Project $ 永   >────────}")
-        .setColor("#74FF33")
+        .setDescription("Prefix: `.` Made by: `RisinPlayZ`")
+        .setAuthor("{───────<    Project Risin    >────────}")
+        .setColor("black")
         .setTimestamp()
         .addField(
-          `>𝙃𝙀𝙇𝙋 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 ───────────────────────`,
+          `>**HELP COMMANDS** ───────────────────────`,
           "**```                - HELP NUKE \n - HELP TEXT                   - HELP SPAMMER \n \n - HELP FUN                    - HELP FUN2 \n \n - HELP INFO                   - HELP STATUS```**"
         )
         .addField(
-          `>𝙈𝙊𝘿 𝙊𝙉
+          `>**MOD ON**
 ───────────────────────`,
           "**` ✅NITRO SNIPER `** \n **` ✅SLOTBOT SNIPER `** \n **` ✅MEE6 XP `**"
         )
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/735915574122774648/giphy_15.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         );
       msg.channel.send(embed).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "status") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project Risin ")
+        .setColor("black  ")
         .setTimestamp()
         .addField(
-          `𝙎𝙏𝘼𝙏𝙐𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 ──────────────────────────────`,
+          `**STATUS COMMANDS** ──────────────────────────────`,
           "`Stream` `Listen` `Watch` `Play` `Stop`"
         )
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/735904008807383071/image1-5.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "text") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/740355683282714654/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙏𝙀𝙓𝙏 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎**",
+          "**TEXT COMMANDS**",
           "`Emojify`\n `Ascii`\n `Lol`\n `Zalgo`\n`Edgy`\n`Reverse`\n `Space`\n `Embed`"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "spammer") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/739152185253691483/image1_2.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙎𝙋𝘼𝙈𝙈𝙀𝙍 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎  ─────────────**",
+          "**SPAMMER COMMANDS  ─────────────**",
           "`Spam` - Spams chat\n `Spamtime` - spam at interval \n `Spamstop` - Stops spam \n `Dmtime` - DM everyone w/ 2m timer (DM Advertising) \n `Dmall` - DM everyone instantly \n `Lyricspam` - Spams chat with lyrics \n`Sendall` - Sends message to all channels"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "fun2") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/739152165632999464/image0_14.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙁𝙐𝙉2 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 ─────────────────**",
+          "**FUN2 COMMANDS ─────────────────**",
           "`IQ` - Displays users IQ \n `Penis` - Displays users penis length \n `Rate` - Displays users attractiveness \n `Lovecalc` - Displays love between users \n `Kiss` - @kiss someone \n `slap` - @slap someone \n `hug` - @hug someone \n `feed` - @feed someone \n `fuck` - @fuck someone \n `gay` - Displays users how gay"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "fun") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/739152135182352384/a_189a830dfdf4dc941e690b8d0cfdfa87.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙁𝙐𝙉 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 ──────────────────**",
+          "**FUN COMMANDS ──────────────────**",
           "`Avatar` - Grab user avatar `stealpfp` - ping @ and set it on your pfp \n `8ball` - Ask 8ball a question \n `YesorNo` - Returns Yes/no to question \n `Coinflip` - Flip a coin \n `Lyric` - Random rap lyric \n `Heroscope` - Check Heroscope \n `Color` - Random Color \n`Year` - Time until next year\n`Lizard` - Gives you a random lizard image\n`Dogfact` - Gives you a random dog image\n`Catfact` - Gives you a random cat image\n`Neko` - Gives you a random neko image."
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "info") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/739151848866578442/a_41e206c22ca379c3f6b6dc3f97dfc1a4.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙄𝙉𝙁𝙊 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎  ─────────────────**",
+          "**INFO COMMANDS  ─────────────────**",
           "`unbanall` - unbanall \n`Purge` - Delete messages \n `Restart` - Restarts bot \n `Ping` - Check ping \n `Server` - Server stats \n `Urban` - Check word with Urban Dict. \n `Calc` - Solves problem \n`Shorten` - Shortens URL \n `Poll` - Creates a poll \n `Team` - Sets random users in teams \n `Weather` - Checks Weather \n `Userstats` - Checks Users Stats \n `Uptime` - Checks bots uptime \n `Wiki` - Search with Wiki \n `Steam` - Check steam games \n `Hastebin` - Uploads text to Hastebin \n`Google` - Googles information \n `Ip` - Lookup IP location \n `Support` - Join support server \n `Translate` - Translate messages \n `Translist` - Languages to translate to\n `Guildlist` - Lists all the guilds you are in"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
     } else if (haste.toLowerCase() === "nuke") {
       let gay = new Discord.RichEmbed()
-        .setAuthor("Project $ 永")
-        .setColor("#74FF33")
+        .setAuthor("Project risin")
+        .setColor("black")
         .setTimestamp()
         .setImage(
-          "https://media.discordapp.net/attachments/727927775683543120/736839578840727562/image3.gif"
+          "https://cdn.discordapp.com/attachments/779725570782003221/780694896449290260/IMG_20201124_125049_018.JPG"
         )
         .addField(
-          "**𝙉𝙐𝙆𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎**",
+          "**NUKE COMMANDS**",
           "`Banall` - Bans all users \n `Kickall` - Kicks all users \n `Massvc` - Creates 100 voice channels \n `Masschannel` - Creates 100 text channels \n `Deleteall` - Deletes all channels \n `wizz` - Bans and deletes everything"
         );
       msg.channel.send(gay).then(message => message.delete(240000));
@@ -2310,6 +2311,7 @@ bot.on("message", async msg => {
   if (command === "lyricspam") {
     msg.delete();
     let messageList = [
+      "`RisinPlayZ OP`",
       "`Ah-pardon me, I get the money like lottery don't bother me, she suck me so good, no slobbery`",
       "`AK with the scope, nigga and it's real dirty (21)`",
       "`Wait a minute, I been sippin’ Henny like it’s Minute Maid, Let ‘em hate, I been gettin’ to it, gettin’ hella paid`",
